@@ -12,11 +12,21 @@
   
 </head>
 <body>
-    
+    <div id="navLaterale" class="nav_laterale">
+        <!-- &times carattere HTML a forma di X, che una volta premuto richiama la funzione closeNav() -->
+        <a style="font-size: 70px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Elementi della Navbar Laterale-->
+        <a href="#">Adriano Olivetti</a>
+        <a href="#">Divisumma 14</a>
+        <a href="#">Lexikon 80</a>
+        <a href="#">Sirio</a>
+    </div>
     <nav>
         <a href="index.html" class="logo_itt"><img src="Images/logo.png" alt="logo dell'ITT" width="100%"></a>
         <a href="index.html" class="titolo_nav">WikITT</a>
+        <div>Museo</div>
         <div onclick="openNav()" class="menu_button">&#9776</div>
+        <div class="contenitore_vuoto"></div>
     </nav>
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quisquam debitis saepe veniam laboriosam dolor aspernatur? Amet voluptates, delectus dolorem ab facilis iusto quasi dignissimos a nesciunt, error aliquam corporis?
@@ -31,4 +41,13 @@
         Veritatis ratione labore maiores magni, cupiditate dolore, exercitationem explicabo nemo sit dolorum modi suscipit officia fugit nobis. Eaque, in. Pariatur qui architecto, alias id quam corporis ex fugit illo harum?
     </div>
 </body>
+<script>
+    function openNav() {
+      document.getElementById("navLaterale").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("navLaterale").style.width = "0";
+    }
+</script>
 </html>
