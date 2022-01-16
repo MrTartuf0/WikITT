@@ -1,0 +1,19 @@
+/* Importo i font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+.logo_itt{
+    width: 70px;
+}
+nav{
+    display: flex;
+    background-color: khaki;
+    justify-content: center;
+    align-items: center;
+}
+.nav_titolo{
+    font-size: 40px;
+}
