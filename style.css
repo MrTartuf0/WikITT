@@ -1,3 +1,4 @@
+/* Importazione dei font da google */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 *{
@@ -19,7 +20,7 @@
     padding-top: 60px;
     text-align: center;
   }
-
+/* Link della navbar laterale */
 .nav_laterale a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -29,9 +30,9 @@
     transition: 0.3s;
 }
 .nav_laterale a:hover{
-
+    color: #f1f1f1;
 }
-
+/* NavBar Superiore */
 nav{
     display: flex;
     align-items: center;
@@ -41,11 +42,11 @@ nav{
     z-index: 1;
     background-color: #161616;
 }
-
+/* Logo posto all inizio */
 .logo_itt{
     width: 80px;
 }
-
+/* Scritta WikITT */
 .titolo_nav{
     font-size: 2.5em;
     text-decoration: none;
@@ -53,11 +54,13 @@ nav{
     color: white;
     flex: 10;
 }
+/* Scritta Museo */
 nav div:nth-child(3){
     color: white;
     font-size: 40px;
     
 }
+/* Pulsante per la barra laterale */
 .menu_button{
      color: white;
      font-size: 50px;
@@ -66,6 +69,7 @@ nav div:nth-child(3){
      justify-content: right;
      cursor: pointer;
 }
+/* Contenitore a destra della navbar che ha la funzione di fare da offset al bottone che apre la barra laterale */
 .contenitore_vuoto{
     width: 3%;
 }
