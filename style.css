@@ -20,6 +20,7 @@
     padding-top: 60px;
     text-align: center;
   }
+
 /* Link della navbar laterale */
 .nav_laterale a {
     padding: 8px 8px 8px 32px;
@@ -29,9 +30,11 @@
     display: block;
     transition: 0.3s;
 }
+
 .nav_laterale a:hover{
     color: #f1f1f1;
 }
+
 /* NavBar Superiore */
 nav{
     display: flex;
@@ -42,10 +45,12 @@ nav{
     z-index: 1;
     background-color: #161616;
 }
+
 /* Logo posto all inizio */
 .logo_itt{
     width: 80px;
 }
+
 /* Scritta WikITT */
 .titolo_nav{
     font-size: 2.5em;
@@ -54,12 +59,14 @@ nav{
     color: white;
     flex: 10;
 }
+
 /* Scritta Museo */
 nav div:nth-child(3){
     color: white;
     font-size: 40px;
     
 }
+
 /* Pulsante per la barra laterale */
 .menu_button{
      color: white;
@@ -69,13 +76,39 @@ nav div:nth-child(3){
      justify-content: right;
      cursor: pointer;
 }
+
 /* Contenitore a destra della navbar che ha la funzione di fare da offset al bottone che apre la barra laterale */
 .contenitore_vuoto{
     width: 3%;
 }
 
+.contenitore_responsive{
+    width: min(90%, 800px);
+    margin: 0 auto;
+}
 
+.titolo{
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 700;
+}
 
+.testo{
+    font-size: 20px;
+}
 
+.divisione_testo{
+    display: flex;
+}
 
+.porzione_sinistra{
+    flex: 2;
+}
 
+.vuoto{
+    flex:0.5;
+}
+
+.porzione_destra{
+    flex: 1;
+}
