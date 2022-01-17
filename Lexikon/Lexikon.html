@@ -1,75 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titolo -->
+    <title>LEXIKON 80</title>
+    <!-- Logo sulla scheda del Browser -->
+    <link rel="shortcut icon" href="/Images/logo.ico" type="image/x-icon">
+    <!-- Collegamento al CSS -->
+    <link rel="stylesheet" href="/style.css">
+  
 </head>
 <body>
+    <!-- NavBar Laterale -->
+    <div id="navLaterale" class="nav_laterale">
+        <!-- &times carattere HTML a forma di X, che una volta premuto richiama la funzione closeNav() -->
+        <a style="font-size: 70px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Elementi della Navbar Laterale-->
+        <a href="/Adriano_Olivetti/Adriano_Olivetti.html">Adriano Olivetti</a>
+        <a href="/Divisumma/Divisumma.html">Divisumma 14</a>
+        <a href="/Lexikon/Lexikon.html">Lexikon 80</a>
+        <a href="/Sirio/Sirio.html">Sirio</a>
+    </div>
+    <!-- Barra superiore -->
+    <nav>
+        <a href="/index.html" class="logo_itt"><img src="/Images/logo.png" alt="logo dell'ITT" width="100%"></a>
+        <a href="/index.html" class="titolo_nav">WikITT</a>
+        <div>Museo</div>
+        <!-- Bottone per richiamare la fuzione per allargare il div della barra laterale -->
+        <div onclick="openNav()" class="menu_button">&#9776</div>
+        <div class="contenitore_vuoto"></div>
+    </nav>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-
-<h2>Animated Sidenav Example</h2>
-<p>Click on the element below to open the side navigation menu.</p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
+    <!-- Inizio Pagina -->
+    <div class="contenitore_responsive">
+        <div class="titolo">LEXIKON 80</div>
+        <hr>
+        <img src="/Lexikon/MARCELLO NIZZOLI e macchine da scrivere.jpg" alt="" width="100%" style="margin-top: 10px;margin-bottom: 10px;">
+        <div class="testo">
+            
+        </div>    
+    </div>
 </body>
-</html> 
+
+<!-- JAVASCRIPT -->
+<script>
+    //Funzione per allargare in full screen il div contenente la Navbar Laterale 
+    function openNav() {
+      document.getElementById("navLaterale").style.width = "100%";
+    }
+    //Funzione per restringere a zero il div contenente la Navvar laterale
+    function closeNav() {
+      document.getElementById("navLaterale").style.width = "0";
+    }
+</script>
+</html>
