@@ -5,7 +5,15 @@
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+@media screen and (min-width:0px){
+    
+}
+@media screen and (min-width:800px){
+    
+}
+
 
 .nav_laterale {
     height: 100%;
@@ -79,12 +87,14 @@ nav div:nth-child(3){
 
 /* Contenitore a destra della navbar che ha la funzione di fare da offset al bottone che apre la barra laterale */
 .contenitore_vuoto{
-    width: 3%;
+    flex: 1%;
 }
 
 .contenitore_responsive{
     width: min(90%, 800px);
     margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px;
+    padding: 30px;
 }
 
 .titolo{
