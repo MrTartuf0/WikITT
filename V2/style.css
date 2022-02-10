@@ -138,17 +138,16 @@ nav{
 
 .content-full-white{
     background-color: var(--white);
-    height: 3000px;
 }
 
 .center-topics{
     display: flex;
     justify-content: center;
-    width: 100%;    
+    width: 100%; 
+    padding-bottom: 80px;   
 }
 
 .topics{
-    background-color: lightblue;
     display: flex;
     width: var(--topicsWidth);
     flex-wrap: wrap;
@@ -156,18 +155,79 @@ nav{
 }
 
 .topic{
-    background-color: lightcoral;
+    background-color: var(--white);
     width: 300px;
     height: 300px;
-    margin: 10px;
+    margin: 15px;
     border-radius: 25px;
     
     display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    transition: 0.5s;
+
+    box-shadow: 0px 0px 20px 0px grey;
+}
+.topic:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .bottom-text{
-    
+    display: flex;
+    background-color: #E2001A;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 10px 15px 10px;
+    border-radius: 0px 0px 25px 25px;
+    justify-content: space-around;
+
+    color: var(--white);
 }
+
+.right-arrow{
+    width: 25px;
+    fill: var(--white);
+}
+
+.olivetti{
+    background-image: url(Images/Adriano-Olivetti.png);
+    background-size: contain;
+}
+
+.lexicon{
+    background-image: url(Images/lexicon.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+}
+
+.divisumma{
+    background-image: url(Images/divisumma.png);
+    background-size: 110%;
+    background-position: center;
+    background-position-y: -20px;
+}
+
+.giugiaro{
+    background-image: url(Images/giugiaro.jpg);
+    background-size: contain;
+}
+
+.nizzoli{
+    background-image: url(Images/nizzoli.jpg);
+    background-size: contain;
+    background-size: 100%;
+}
+
+.sirio{
+    background-image: url(Images/sirio.jpg);
+    background-size: contain;
+}
+
+
 
 
 
