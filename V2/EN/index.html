@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WikITT</title>
-    <link rel="shortcut icon" href="../Images/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-    
+    <div id="navLaterale" class="nav_laterale">
+        <a href="Olivetti/olivetti.html">Adriano Olivetti</a>
+        <a href="Divisumma/divisumma.html">Divisumma 14</a>
+        <a href="Giugiaro/giugiaro.html">Giugiaro</a>
+        <a href="Lexicon/lexicon.html">Lexicon</a>
+        <a href="Nizzoli/nizzoli.html">Nizzoli</a>
+        <a href="Sirio/Sirio.html">Sirio</a>
+    </div>
 
     <nav>
         <div class="center-nav">
-            <div class="nav-logo-title">
+            <div class="nav-logo-title" onclick="window.location.href='index.html'">
                 <div class="nav-logo">
                     <img src="../Images/logo.png" height="100%">
                 </div>
@@ -27,7 +34,7 @@
                 <div class="languace">
                     <img src="../Images/it-flag.png" height="100%" class="flag" onclick="window.location.href='../index.html'">
                 </div>
-                <div onclick="openNav()" class="menu">&#9776</div>
+                <div class="menu" id="menu" onclick="openNav()">&#9776</div>
             </div>
         </div>
     </nav>
@@ -49,11 +56,11 @@
         </a>
 
         <div class="content-full-white">
-            <div class="titolo-contenuti">Explore our topics</div>
+            <div class="titolo-contenuti">Explore our Content</div>
             
             <div class="center-topics">
                 <div class="topics">
-                    <div class="olivetti topic">
+                    <div class="olivetti topic " onclick="window.location.href='Olivetti/olivetti.html'">
                         <div class="bottom-text">
                             Adriano Olivetti
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -68,7 +75,7 @@
                         </div>
                     </div>
 
-                    <div class="lexicon topic">
+                    <div class="lexicon topic" onclick="window.location.href='Lexicon/lexicon.html'">
                         <div class="bottom-text">
                             Lexicon
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -82,7 +89,7 @@
                         </div>
                     </div>
 
-                    <div class="divisumma topic">
+                    <div class="divisumma topic" onclick="window.location.href='Divisumma/divisumma.html'">
                         <div class="bottom-text">
                             Divisumma 14
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -96,7 +103,7 @@
                         </div>
                     </div>
 
-                    <div class="giugiaro topic">
+                    <div class="giugiaro topic" onclick="window.location.href='Giugiaro/giugiaro.html'">
                         <div class="bottom-text">
                             Giorgetto Giugiaro
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -110,7 +117,7 @@
                         </div>
                     </div>
 
-                    <div class="nizzoli topic">
+                    <div class="nizzoli topic" onclick="window.location.href='Nizzoli/nizzoli.html'">
                         <div class="bottom-text">
                             Marcello Nizzoli
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -123,7 +130,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="sirio topic">
+                    <div class="sirio topic" onclick="window.location.href='Sirio/sirio.html'">
                         <div class="bottom-text">
                             Sirio
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -143,5 +150,63 @@
         </div>
     </div>
 
+
+    <div class="contenitore_responsive">
+        <div class="titolo">Sirio</div>
+        <hr>
+        <div class="testo">
+            <br>
+            <p>
+                ll telefono Sirio è un telefono a tasti prodotto da Brondi e FATME per la SIP dal 1990.
+            </p>
+            <br>
+            <p>
+                Fu il primo telefono fisso in Italia predisposto alla selezione del numero con toni DTMF 
+                a multifrequenza. Un commutatore posto sul retro dell'apparecchio permetteva di scegliere 
+                manualmente se comporre il numero con tonalità DTMF oppure con tonalità decadica, a sequenza d'impulsi. 
+            </p>
+            <br>
+            <p>
+                Il telefono venne disegnato da <strong>Giugiaro</strong> Design nel 1987, che disegnò un apparecchio dalle linee semplici 
+                e allo stesso tempo eleganti e conformi all'esigenza dell'azienda di produrlo su larga scala per sostituire 
+                il modello predecessore Pulsar.
+            </p>
+            <br>
+            <img src="../../Images/Giorgetto Giugiaro.jpg" alt="immagine rappresentante giorgetto Giugiaro" width="100%">
+            <br>
+            <br>
+            <p>Spetta a Gillo Dorfles la definizione più suggestiva della macchina per scrivere Lexikon 80 (1948) 
+                : «uno dei primi esempi di un oggetto a carrozzeria la cui linea filante fosse concepita non come mero 
+                involucro cosmetico ma come risultante di un’attenta corrispondenza con la struttura interna del meccanismo incluso» (1957)
+            </p>
+            <br><br>
+        </div>   
+    </div>
+
+
 </body>
+
+
+<script>
+    var nClick=0;
+    
+    function openNav() {
+        nClick++;
+        console.log(nClick);
+        if(nClick%2==0){
+            console.log("Pari");
+            document.getElementById("navLaterale").style.width = "0%";
+            document.getElementById("menu").innerText = "\u2630";
+        }
+        else{
+            console.log("Dispari");
+            document.getElementById("navLaterale").style.width = "100%";
+            document.getElementById("menu").innerText = "\u00d7";
+        }
+
+        
+
+    }
+</script>
+
 </html>

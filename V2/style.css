@@ -16,6 +16,32 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.nav_laterale {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+  }
+.nav_laterale a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.nav_laterale a:hover{
+    color: #f1f1f1;
+}
+
+
 nav{
     display: flex;
     background-color: var(--dark-gray);
@@ -40,6 +66,11 @@ nav{
     flex-direction: row;
     align-items: center;
     flex: 33%;
+    transition: 0.2s;
+}
+.nav-logo-title:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .nav-logo{
@@ -72,6 +103,10 @@ nav{
 
 .flag{
     border-radius: 40px;
+    transition: 0.2s;
+}
+.flag:hover{
+    transform: scale(1.05);
 }
 
 
@@ -86,9 +121,12 @@ nav{
     color: var(--white);
     margin: 0 10px;
     padding: 0px 0px 5px 0px;
+    transition: 0.2s;
 }
 .menu:hover{
     cursor: pointer;
+    color: var(--white);
+    opacity: 0.8;
 }
 
 .content-full-grey{
@@ -229,8 +267,23 @@ nav{
 
 
 
+.contenitore_responsive{
+    width: min(100%, 800px);
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px;
+    padding: 30px;
+}
+
+.titolo{
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 800;
+}
 
 
+.testo{
+    font-size: 20px;
+}
 
 
 

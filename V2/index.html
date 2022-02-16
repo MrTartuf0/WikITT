@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     
+    <div id="navLaterale" class="nav_laterale">
+        <a href="IT/Olivetti/olivetti.html">Adriano Olivetti</a>
+        <a href="IT/Sirio/Sirio.html">Sirio</a>
+        <a href="IT/Lexicon/lexicon.html">Lexicon</a>
+        <a href="IT/Nizzoli/nizzoli.html">Nizzoli</a>
+        <a href="IT/Giugiaro/giugiaro.html">Giugiaro</a>
+        <a href="IT/Divisumma/divisumma.html">Divisumma 14</a>
+    </div>
 
     <nav>
         <div class="center-nav">
-            <div class="nav-logo-title">
+            <div class="nav-logo-title" onclick="window.location.href='index.html'">
                 <div class="nav-logo">
                     <img src="Images/logo.png" height="100%">
                 </div>
@@ -27,7 +34,7 @@
                 <div class="languace">
                     <img src="Images/uk-flag.jpg" height="100%" class="flag" onclick="window.location.href='EN/index.html'">
                 </div>
-                <div onclick="openNav()" class="menu">&#9776</div>
+                <div class="menu" id="menu" onclick="openNav()">&#9776</div>
             </div>
         </div>
     </nav>
@@ -53,7 +60,7 @@
             
             <div class="center-topics">
                 <div class="topics">
-                    <div class="olivetti topic">
+                    <div class="olivetti topic" onclick="window.location.href='IT/Olivetti/olivetti.html'">
                         <div class="bottom-text">
                             Adriano Olivetti
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -68,7 +75,7 @@
                         </div>
                     </div>
 
-                    <div class="lexicon topic">
+                    <div class="lexicon topic" onclick="window.location.href='IT/Lexicon/lexicon.html'">
                         <div class="bottom-text">
                             Lexicon
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -82,7 +89,7 @@
                         </div>
                     </div>
 
-                    <div class="divisumma topic">
+                    <div class="divisumma topic" onclick="window.location.href='IT/Divisumma/divisumma.html'">
                         <div class="bottom-text">
                             Divisumma 14
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -96,7 +103,7 @@
                         </div>
                     </div>
 
-                    <div class="giugiaro topic">
+                    <div class="giugiaro topic" onclick="window.location.href='IT/Giugiaro/giugiaro.html'">
                         <div class="bottom-text">
                             Giorgetto Giugiaro
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -110,7 +117,7 @@
                         </div>
                     </div>
 
-                    <div class="nizzoli topic">
+                    <div class="nizzoli topic" onclick="window.location.href='IT/Nizzoli/nizzoli.html'">
                         <div class="bottom-text">
                             Marcello Nizzoli
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -123,7 +130,8 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="sirio topic">
+
+                    <div class="sirio topic" onclick="window.location.href='IT/Sirio/sirio.html'">
                         <div class="bottom-text">
                             Sirio
                             <svg x="0px" y="0px" viewBox="0 0 31.143 31.143" style="enable-background:new 0 0 10 31.143;" xml:space="preserve" class="right-arrow">
@@ -136,12 +144,18 @@
                             </svg>
                         </div>
                     </div>
+
+
                 </div>
             </div>
-
-            
         </div>
     </div>
 
+
+
 </body>
+
+
+<script src="script.js"></script>
+
 </html>
