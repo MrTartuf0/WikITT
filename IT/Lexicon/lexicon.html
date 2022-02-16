@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titolo -->
-    <title>LEXIKON 80</title>
-    <!-- Logo sulla scheda del Browser -->
-    <link rel="shortcut icon" href="../Images/logo.ico" type="image/x-icon">
-    <!-- Collegamento al CSS -->
-    <link rel="stylesheet" href="../style.css">
-  
+    <title>WikITT</title>
+    <link rel="shortcut icon" href="Images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-    <!-- NavBar Laterale -->
+
     <div id="navLaterale" class="nav_laterale">
-        <!-- &times carattere HTML a forma di X, che una volta premuto richiama la funzione closeNav() -->
-        <a style="font-size: 70px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!-- Elementi della Navbar Laterale-->
-        <a href="../Adriano_Olivetti/Adriano_Olivetti.html">Adriano Olivetti</a>
-        <a href="../Divisumma/Divisumma.html">Divisumma 14</a>
-        <a href="../Lexikon/Lexikon.html">Lexikon 80</a>
+        <a href="../Olivetti/olivetti.html">Adriano Olivetti</a>
         <a href="../Sirio/Sirio.html">Sirio</a>
+        <a href="../Lexicon/lexicon.html">Lexicon</a>
+        <a href="../Giugiaro/giugiaro.html">Giugiaro</a>
+        <a href="../Nizzoli/nizzoli.html">Nizzoli</a>
+        <a href="../Divisumma/divisumma.html">Divisumma 14</a>
     </div>
-    <!-- Barra superiore -->
+
     <nav>
-        <a href="../index.html" class="logo_itt"><img src="../Images/logo.png" alt="logo dell'ITT" width="100%"></a>
-        <a href="../index.html" class="titolo_nav">WikITT</a>
-        <div>Museo</div>
-        <!-- Bottone per richiamare la fuzione per allargare il div della barra laterale -->
-        <div onclick="openNav()" class="menu_button">&#9776</div>
-        <div class="contenitore_vuoto"></div>
+        <div class="center-nav">
+            <div class="nav-logo-title" onclick="window.location.href='../../index.html'">
+                <div class="nav-logo">
+                    <img src="../../Images/logo.png" height="100%">
+                </div>
+                <div class="nav-title">WikITT</div>
+            </div>
+
+            <div class="museo-title">Museo</div>
+            
+            <div class="settings">
+                <div class="languace">
+                    <img src="../../Images/uk-flag.jpg" height="100%" class="flag" onclick="window.location.href='../../EN/Lexicon/lexicon.html'">
+                </div>
+                <div class="menu" id="menu" onclick="openNav()">&#9776</div>
+            </div>
+        </div>
     </nav>
 
-    <!-- Inizio Pagina -->
     <div class="contenitore_responsive">
         <div class="titolo">LEXIKON 80</div>
         <hr>
@@ -44,7 +49,7 @@
                  «uno dei primi esempi di un oggetto a carrozzeria la cui linea filante fosse concepita non come mero 
                  involucro cosmetico ma come risultante di un’attenta corrispondenza con la struttura interna del meccanismo incluso» (1957)
             </p>
-            <img src="../Lexikon/MARCELLO NIZZOLI e macchine da scrivere.jpg" alt="" width="100%" style="margin-top: 10px;margin-bottom: 10px;">
+            <img src="../../Images/MARCELLO NIZZOLI e macchine da scrivere.jpg" alt="" width="100%" style="margin-top: 10px;margin-bottom: 10px;">
             <p>
                 Tra i primi artisti  che si impegnarono a progettare oggetti d’uso, dimostrando interesse per la macchina e per la nascente industria,  
                 occorre ricordare subito Marcello Nizzoli, pittore di formazione, il cui nome è indissolubilmente legato all’Olivetti.
@@ -64,20 +69,18 @@
                 per antonomasia.
             </p>
             <br>
-            <img src="../Lexikon/Reparto Lexikon80.jpg" alt="" width="100%" style="margin-top: 10px;margin-bottom: 10px;">
+            <img src="../../Images/Reparto Lexikon80.jpg" alt="" width="100%" style="margin-top: 10px;margin-bottom: 10px;">
         </div>    
     </div>
+  
+
+            
+
+
+
 </body>
 
-<!-- JAVASCRIPT -->
-<script>
-    //Funzione per allargare in full screen il div contenente la Navbar Laterale 
-    function openNav() {
-      document.getElementById("navLaterale").style.width = "100%";
-    }
-    //Funzione per restringere a zero il div contenente la Navvar laterale
-    function closeNav() {
-      document.getElementById("navLaterale").style.width = "0";
-    }
-</script>
+
+<script src="../../script.js"></script>
+
 </html>

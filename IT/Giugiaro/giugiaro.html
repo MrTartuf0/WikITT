@@ -8,6 +8,22 @@
     <link rel="shortcut icon" href="Images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../style.css">
 </head>
+
+<style>
+    .caratteristiche{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .colonna-sinistra{
+        flex: 40%;
+    }
+    .colonna-destra{
+        flex: 60%;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+</style>
+
 <body>
 
     <div id="navLaterale" class="nav_laterale">
@@ -32,15 +48,32 @@
             
             <div class="settings">
                 <div class="languace">
-                    <img src="../../Images/uk-flag.jpg" height="100%" class="flag" onclick="window.location.href='../../EN/Lexicon/lexicon.html'">
+                    <img src="../../Images/uk-flag.jpg" height="100%" class="flag" onclick="window.location.href='../../EN/Giugiaro/giugiaro.html'">
                 </div>
                 <div class="menu" id="menu" onclick="openNav()">&#9776</div>
             </div>
         </div>
     </nav>
 
-    <h1>LEXICON IT</h1>
-  
+    <div class="contenitore_responsive">
+        <div class="titolo">Giorgetto Giugiaro</div>
+        <hr>
+        <div class="testo">
+            <div class="caratteristiche" style="margin-bottom: 20px;">
+                <div class="colonna-sinistra">
+                    Giorgetto Giugiaro è un designer automobilistico italiano, noto per aver dato vita a progetti come la BMW M1, 
+                    la Saab 9000, la Panda, la Golf, la Thema, la SEAT Ibiza, la Renault 19, la Hyundai Lantra, la Grande Punto, 
+                    il Nuovo Panda, e molti altri. 
+                    Ha ricevuto numerosi riconoscimenti per le sue opere nel corso della sua vita, tra cui: il Compasso d'Oro per la sua carriera (1984) e 
+                    il Compasso d'Oro per il design (1981, 1991, 2004).
+                </div>
+                <div class="colonna-destra">
+                    <img src="../../Images/giorgetto.jpg" width="400px">
+                </div>
+            </div>
+
+        </div>    
+    </div>
 
             
 

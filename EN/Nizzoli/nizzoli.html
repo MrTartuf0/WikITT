@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikITT</title>
+    <link rel="shortcut icon" href="Images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<style>
+    .sinistra{
+            flex:40%;
+        }
+    
+    .destra{
+        flex:10%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 50px 0px 0px;
+    }
+</style>
+
+<body>
+
+    <div id="navLaterale" class="nav_laterale">
+        <a href="../Olivetti/olivetti.html">Adriano Olivetti</a>
+        <a href="../Sirio/Sirio.html">Sirio</a>
+        <a href="../Lexicon/lexicon.html">Lexicon</a>
+        <a href="../Giugiaro/giugiaro.html">Giugiaro</a>
+        <a href="../Nizzoli/nizzoli.html">Nizzoli</a>
+        <a href="../Divisumma/divisumma.html">Divisumma 14</a>
+    </div>
+
+    <nav>
+        <div class="center-nav">
+            <div class="nav-logo-title" onclick="window.location.href='../../index.html'">
+                <div class="nav-logo">
+                    <img src="../../Images/logo.png" height="100%">
+                </div>
+                <div class="nav-title">WikITT</div>
+            </div>
+
+            <div class="museo-title">Museum</div>
+            
+            <div class="settings">
+                <div class="languace">
+                    <img src="../../Images/it-flag.png" height="100%" class="flag" onclick="window.location.href='../../IT/Nizzoli/nizzoli.html'">
+                </div>
+                <div class="menu" id="menu" onclick="openNav()">&#9776</div>
+            </div>
+        </div>
+    </nav>
+
+  
+    <div class="contenitore_responsive">
+        <div class="titolo">Marcello Nizzoli</div>
+        <hr>
+            <div class="testo" style="flex-wrap: wrap; display: flex;">
+            <div class="sinistra">
+                <div class="titolo" style="font-size: 30px; font-weight: 600;">Date of birth</div>
+                
+                <br>
+                <p>
+                    <strong>Place of birth</strong>: Boretto (Reggio Emilia)
+                </p>
+                <br>
+                <p>
+                    <strong>Date of birth</strong>: 1887
+                </p>
+                <br>
+                <p>
+                    <strong>Place of death</strong>: Camogli (Genova)
+                </p>
+                <br>
+                <p>
+                    <strong>Date of death</strong>: 1969
+                </p>
+                <br>
+            </div>
+            <div class="destra">
+                <img src="../../Images/nizzoli.jpeg" >
+            </div>
+        </div>    
+        <div class="testo">
+            <div class="titolo" style="font-size: 30px; font-weight: 600;">Biography / History</div>
+            <p>
+                Marcello Nizzoli was an industrial designer, architect and painter, among the most important of the Italian twentieth century, 
+                the father of the most famous Olivetti typewriters, symbol of Italian modernity and industrial rebirth 
+                non-war, with objects also exhibited at the MOMA in New York.
+            </p>
+        </div>
+    </div>
+            
+
+
+
+</body>
+
+
+<script src="../../script.js"></script>
+
+</html>

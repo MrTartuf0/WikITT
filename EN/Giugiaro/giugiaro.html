@@ -8,6 +8,22 @@
     <link rel="shortcut icon" href="Images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../style.css">
 </head>
+
+<style>
+    .caratteristiche{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .colonna-sinistra{
+        flex: 40%;
+    }
+    .colonna-destra{
+        flex: 60%;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+</style>
+
 <body>
 
     <div id="navLaterale" class="nav_laterale">
@@ -32,15 +48,34 @@
             
             <div class="settings">
                 <div class="languace">
-                    <img src="../../Images/it-flag.png" height="100%" class="flag" onclick="window.location.href='../../IT/Nizzoli/nizzoli.html'">
+                    <img src="../../Images/it-flag.png" height="100%" class="flag" onclick="window.location.href='../../IT/Giugiaro/giugiaro.html'">
                 </div>
                 <div class="menu" id="menu" onclick="openNav()">&#9776</div>
             </div>
         </div>
     </nav>
 
+
+    <div class="contenitore_responsive">
+        <div class="titolo">Giorgetto Giugiaro</div>
+        <hr>
+        <div class="testo">
+            <div class="caratteristiche" style="margin-bottom: 20px;">
+                <div class="colonna-sinistra">
+                    Giorgetto Giugiaro is an Italian automobile designer, well known for bringing to life projects like the BMW M1, 
+                    the Saab 9000, the Panda, the Golf, the Thema, the SEAT Ibiza, the Renault 19, the Hyundai Lantra, the Grande Punto, 
+                    the New Panda, and many more. 
+                    He received many awards for his works throughout his life, including: the Compasso d'Oro for his career (1984) and 
+                    the Compasso d'Oro for design (1981, 1991, 2004).
+                </div>
+                <div class="colonna-destra">
+                    <img src="../../Images/giorgetto.jpg" width="400px">
+                </div>
+            </div>
+
+        </div>    
+    </div>
   
-    <h1>Nizzoli EN</h1>
 
             
 
